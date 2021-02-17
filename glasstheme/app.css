@@ -1,0 +1,173 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color:#426696;
+    font-weight:600;
+    font-size:2rem;
+}
+
+h3 {
+    font-size:16px;
+    color:#426696;
+
+    
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9, #6cdbeb); 
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+}
+
+/* Main Glass Element */
+.glass {
+    display:flex;
+    background-color: white;
+    min-height: 80vh;
+    width: 60vw;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255 ,0.7), rgba(255, 255, 255, 0.1) );
+    border-radius: 2rem ;
+    backdrop-filter: blur(2rem);
+    z-index:2;
+    font-size:20;
+}
+
+/* Circles behind the main glass element */
+.circle ,
+.circle2 {
+  background:white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255 ,0.9), rgba(255, 255, 255, 0.3) );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius:50% ;
+}
+.circle {
+    bottom:5%;
+    left:10%;
+}
+.circle2 {
+    top:5%;
+    right:10%;
+}
+
+/* My Logo*/
+.png{
+    width:100px;
+    height:80px;
+    margin:auto;
+}
+
+/* DASHBOARD */
+.dashboard{
+    flex:0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly ;
+    text-align:center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255 ,0.7), rgba(255, 255, 255, 0.1));
+    border-radius: 2rem ;
+    width:35%;
+
+}
+/* LINK DIV*/
+
+.link {
+    display: flex;
+    margin:1rem 1rem;
+    padding:1rem 5rem;
+    align-items: center;
+}
+
+.link h3{
+    padding:0rem 1rem;
+}
+
+
+.pro {
+    display: flex;
+    background: linear-gradient(to right top,#65dfc9, #6cdbeb); 
+    border-radius:2rem ;
+    color:white;
+    padding:1rem;
+    position: relative;
+    margin-left:-3rem
+}
+
+.pro img {
+    position: absolute;
+    top:-38%;
+    left:85%;
+    width:60px;
+}
+.pro h2 {
+    width:60%;
+}
+
+/* GAMES SECTION */
+.status {
+    margin-bottom:0rem;
+}
+
+.status input {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255 ,0.7), rgba(255, 255, 255, 0.3));
+   border: none;
+   width:50%;
+   padding:0.5rem;
+   margin-left: 1rem;
+   border-radius:5% 5%;
+}
+
+.status input:active{
+    border: none;
+    border-style: none;
+}
+
+.games {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:2rem;
+}
+
+.cards {
+    display: flex;
+    height:90px;
+    width:140%;
+    background: linear-gradient(to left top, rgba(255, 255, 255 ,0.2), rgba(255, 255, 255, 0.8 ));
+    border-radius:1rem;
+    margin: 0rem 0rem 0rem 0rem ;
+    box-shadow: 06px  6px 20px  rgba(255, 255, 255, 0.2);
+   justify-content: space-around;
+   transition:0.2s ease-in-out;
+   position:relative;
+}
+
+.cards:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.progress {
+ background: linear-gradient(to left top,#65dfc9,#6cdbeb );
+ width:100%;
+ height:25%;
+ border-radius:1rem;
+ position:absolute;
+ position:relative;
+}
+
+.progress::after{
+    content: " ";
+    width: 90%;
+    height: 100%;
+    background-color: #426696;
+    position: absolute;
+    left:60%;
+}

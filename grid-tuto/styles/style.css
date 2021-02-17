@@ -1,0 +1,29 @@
+.basic-grid {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20vh;
+  margin-left: 20vw;
+}
+
+@-webkit-keyframes rot {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rot {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+svg #start {
+  -webkit-animation: rot 4s ease-out;
+          animation: rot 4s ease-out;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@import "./variables";
+
+@mixin flex-center($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $background;
+}
+
+header {
+    @include flex-center(column, lightblue );
+    button {
+        background-color: $primary-btn;
+        color:$text-color;
+        &:hover {
+            background-color: red;
+            &::after {
+             content: "greet";
+            }
+        }
+    }
+}   

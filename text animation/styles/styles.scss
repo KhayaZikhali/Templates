@@ -1,0 +1,70 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color:rgb(23, 108, 177);
+}
+
+#logo {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+@keyframes rot{
+    from {transform: translate(-50%, 50%);}
+ }  to {
+     transform: rotate(3g);
+ }
+
+@keyframes rot1{
+    from {transform: translate(50%, -50%);}
+ }  to {
+     transform: rotate(3g);
+ }
+
+@keyframes rot3{
+    from {transform: scale(4,8);
+        transform-origin: center;
+        transform: rotateZ(180deg);}
+ } 
+
+
+ @keyframes neon {
+    from {
+        transform: scale(4,8);
+        transform-origin: center;
+        transform: rotateZ(180deg);
+      color: rgba(28, 137, 34, 0);
+      text-shadow: 
+        0 0 1px #73D977, 
+        0 0 5px #07520A, 
+        0 0 1px #1cbb22, 
+        0 0 2px #1cbb22, 
+        0 0 3px #79d97d;
+    }
+    to {
+      color: rgba(28, 137, 34, 0);
+      text-shadow: 
+        0 0 1.5px #73D977, 
+        0 0 5px #07520A, 
+        0 0 1px #1cbb22, 
+        0 0 3px #1cbb22, 
+        0 0 4px #79d97d;
+    }
+  }
+
+#logo path:nth-child(2){
+    text-shadow: white;
+  animation: neon 2s ease;
+}
+
+#logo path:nth-child(3){
+  animation: rot1 2s ease;
+}
+
+#logo path:nth-child(4){
+  animation: rot3 2s ease;
+}
+
+
