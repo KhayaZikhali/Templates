@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #1cadad;
+}
+
+@-webkit-keyframes slide {
+  50% {
+    -webkit-transform: translateX(90%);
+            transform: translateX(90%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  50% {
+    -webkit-transform: translateX(90%);
+            transform: translateX(90%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.staggering-grid-demo {
+  width: 100%;
+  height: 20vh;
+  background-color: grey;
+}
+
+.el {
+  top: 40%;
+  left: 40%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.el:nth-child(1) {
+  -webkit-animation: slide 2s ease-in infinite 0.2s;
+          animation: slide 2s ease-in infinite 0.2s;
+}
+
+.el:nth-child(2) {
+  -webkit-animation: slide 2s ease-in infinite 0.4s;
+          animation: slide 2s ease-in infinite 0.4s;
+}
+
+.el:nth-child(3) {
+  -webkit-animation: slide 2s ease-in infinite 0.8s;
+          animation: slide 2s ease-in infinite 0.8s;
+}
+
+.el:nth-child(4) {
+  -webkit-animation: slide 2s ease-in infinite 1s;
+          animation: slide 2s ease-in infinite 1s;
+}
+/*# sourceMappingURL=style.css.map */
