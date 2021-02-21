@@ -6,8 +6,8 @@ body {
 
 @-webkit-keyframes slide {
   50% {
-    -webkit-transform: translateX(90%);
-            transform: translateX(90%);
+    -webkit-transform: translateX(96vw);
+            transform: translateX(96vw);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -17,8 +17,8 @@ body {
 
 @keyframes slide {
   50% {
-    -webkit-transform: translateX(90%);
-            transform: translateX(90%);
+    -webkit-transform: translateX(96vw);
+            transform: translateX(96vw);
   }
   100% {
     -webkit-transform: translateX(0);
@@ -27,9 +27,16 @@ body {
 }
 
 .staggering-grid-demo {
-  width: 100%;
+  width: 100vw;
   height: 20vh;
   background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .el {
@@ -42,22 +49,27 @@ body {
 }
 
 .el:nth-child(1) {
-  -webkit-animation: slide 2s ease-in infinite 0.2s;
-          animation: slide 2s ease-in infinite 0.2s;
+  -webkit-animation: slide 6s ease-in infinite 0.2s;
+          animation: slide 6s ease-in infinite 0.2s;
 }
 
 .el:nth-child(2) {
-  -webkit-animation: slide 2s ease-in infinite 0.4s;
-          animation: slide 2s ease-in infinite 0.4s;
+  -webkit-animation: slide 6s ease-in infinite 0.4s;
+          animation: slide 6s ease-in infinite 0.4s;
 }
 
 .el:nth-child(3) {
-  -webkit-animation: slide 2s ease-in infinite 0.8s;
-          animation: slide 2s ease-in infinite 0.8s;
+  -webkit-animation: slide 6s ease-in infinite 0.8s;
+          animation: slide 6s ease-in infinite 0.8s;
 }
 
 .el:nth-child(4) {
-  -webkit-animation: slide 2s ease-in infinite 1s;
-          animation: slide 2s ease-in infinite 1s;
+  -webkit-animation: slide 6s ease-in infinite 1s;
+          animation: slide 6s ease-in infinite 1s;
+}
+
+.el:nth-child(5) {
+  -webkit-animation: slide 6s ease-in infinite 1.2s;
+          animation: slide 6s ease-in infinite 1.2s;
 }
 /*# sourceMappingURL=style.css.map */
