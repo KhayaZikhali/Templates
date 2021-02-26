@@ -2,17 +2,19 @@ body {
   background-color: #2594af;
   height: 100vh;
   width: 100vw;
+  position: relative;
 }
 
 .bar {
   width: 6vw;
   height: 40vh;
-  left: 50vw;
-  top: 50vh;
+  margin-left: 50vw;
+  margin-top: 0vh;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: burlywood;
   border-radius: 40px;
+  z-index: -1;
 }
 
 .circle {
@@ -20,7 +22,54 @@ body {
   height: 90px;
   background-color: red;
   border: 15px solid #4b4b4b;
+  border-radius: 50%;
+  margin-left: 40vw;
+  margin-top: 50vh;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation: wink 3S;
+          animation: wink 3S;
+}
+
+@-webkit-keyframes wink {
+  0% {
+    -webkit-transform: translate(0, 10);
+            transform: translate(0, 10);
+    z-index: 30;
+  }
+  50% {
+    -webkit-transform: translate(200px, 0);
+            transform: translate(200px, 0);
+    z-index: 30;
+  }
+  75% {
+    z-index: 30;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    z-index: 30;
+  }
+}
+
+@keyframes wink {
+  0% {
+    -webkit-transform: translate(0, 10);
+            transform: translate(0, 10);
+    z-index: 30;
+  }
+  50% {
+    -webkit-transform: translate(200px, 0);
+            transform: translate(200px, 0);
+    z-index: 30;
+  }
+  75% {
+    z-index: 30;
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    z-index: 30;
+  }
 }
 /*# sourceMappingURL=style.css.map */
