@@ -10,6 +10,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: visible;
 }
 
 @-webkit-keyframes rot {
@@ -118,7 +119,27 @@ to {
 }
 
 #logo path:nth-child(4) {
-  -webkit-animation: rot3 2s ease;
-          animation: rot3 2s ease;
+  -webkit-animation: rot3 2s ease .5s;
+          animation: rot3 2s ease .5s;
+}
+
+#logo path:nth-child(5) {
+  -webkit-animation: rot 2s ease;
+          animation: rot 2s ease;
+}
+
+#logo path:nth-child(6) {
+  -webkit-animation: rot3 2s ease .1s;
+          animation: rot3 2s ease .1s;
+}
+
+#logo path:nth-child(7) {
+  -webkit-animation: rot1 2s ease .2s;
+          animation: rot1 2s ease .2s;
+}
+
+#logo path:nth-child(8) {
+  -webkit-animation: rot 2s ease .3s;
+          animation: rot 2s ease .3s;
 }
 /*# sourceMappingURL=styles.css.map */

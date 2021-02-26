@@ -1,0 +1,26 @@
+body {
+  background-color: #2594af;
+  height: 100vh;
+  width: 100vw;
+}
+
+.bar {
+  width: 6vw;
+  height: 40vh;
+  left: 50vw;
+  top: 50vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: burlywood;
+  border-radius: 40px;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: red;
+  border: 15px solid #4b4b4b;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */

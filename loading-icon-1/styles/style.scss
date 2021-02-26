@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(37, 148, 175);
+    height:100vh ;
+    width:100vw;
+}
+
+.bar {
+    width:6vw;
+    height:40vh;
+    left: 50vw;
+    top:50vh;
+    transform: translate(-50%, -50%);
+    background-color: burlywood;
+    border-radius: 40px;
+}
+
+.circle {
+    width:90px;
+    height: 90px;
+    background-color: red;
+    border: 15px solid rgb(75, 75, 75);
+    transform: translate(-50%, -50%);
+}
+
